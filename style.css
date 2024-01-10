@@ -1,0 +1,63 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: top;
+  min-height: 100vh;
+}
+h1 {
+  font-size: 5em;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(137, 149, 163, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.inline-input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.btn-add {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #689dda;
+  border-color: #689dda;
+}
+.toDoesAdded {
+  background: #303481;
+  list-style-type: none;
+  height: 2.5em;
+  width: 53%;
+  color: white;
+  font-size: 1.25em;
+  padding-top: 0.5em;
+  border-bottom: 1px solid #cdc7be;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.toDoesCompleted {
+  background: #d6e6f2;
+  color: black;
+  font-weight: bold;
+  text-decoration: line-through;
+  transition: all 2s ease;
+}
+
+@media all and (max-width: 820px) {
+  h1 {
+    font-size: 4em;
+  }
+  .toDoesAdded{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 3em;
+  }
+  .toDoesAdded{
+    width: 100%;
+  }
+}
