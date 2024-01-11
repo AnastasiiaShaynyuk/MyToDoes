@@ -13,9 +13,12 @@ btn.addEventListener("click", add)
 function add() {
   const item = document.createElement("li")
   item.innerText = inputField.value
+  if (inputField.value.length === 0) {
+    return false;
+  }
   item.classList.add("toDoesAdded");
   toDoesController.appendChild(item);
-  inputField.value = " ";
+  inputField.value = "";
   item.addEventListener("click", () => {
     item.classList.toggle("toDoesCompleted");
   });
